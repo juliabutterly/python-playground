@@ -1,0 +1,19 @@
+{
+  "name": "autostereograms",
+  "main": [
+    "js/reveal.js",
+    "css/reveal.css"
+  ],
+  "homepage": "https://github.com/juliabutterly",
+  "description": "The autostereograms presentation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juliabutterly/python-playground"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}

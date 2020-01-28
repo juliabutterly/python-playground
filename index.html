@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+		<link rel="stylesheet" href="css/template.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section id="slide0">
+					<div>
+						<img src="./assets/images/python_playground.png" alt="python playground" />
+						<h3>Why you should try <span style="white-space: nowrap;">Python Playground</span></h3>
+					</div>
+				</section>
+				<section>
+					<section id="slide1">
+						<h4>Do you see anything other than random dots?</h4>
+						<img src="./assets/images/pp08_01.png" alt="a shark" />	
+					</section>
+					<section id="slide1_ver">
+						<img src="./assets/images/qr-code.svg" alt="qr code" class="qr_code" />
+					</section>
+				</section>
+				<section id="slide2">
+					<h4>How our brain works</h4>
+					<img src="./assets/images/Screenshot 2020-01-27 at 22.25.42.png" />
+				</section>
+				<section id="slide3">
+					<img src="./assets/images/pp08_02.png" alt="linear spacing" />
+				</section>
+				<section id="slide4">
+					<h4>How we can build autostereograms</h4>
+					<h5>Depth maps</h5>
+					<img src="./assets/images/pp08_04.png" alt="seeing depth" />
+				</section>
+				<section>
+					<div class="first">
+						<p>Get a depth map</p>
+						<img src="./assets/images/pp08_04.png"/>
+					</div>
+				</section>
+				<section>
+					<div class="second">
+						<p>Create a "random dot" tile</p>
+						<img src="./assets/images/pp08_05.png"/>
+					</div>
+				</section>
+				<section>
+					<div class="third">
+						<p>Create a new image by repeating the tile with dimentions matching the depth map</p>
+						<div class="third_div">
+							<img src="./assets/images/pp08_05.png"/>
+							<img src="./assets/images/pp08_05.png"/>
+							<img src="./assets/images/pp08_05.png"/>
+						</div>
+					</div>
+				</section>
+				<section>
+					<p>Shift each pixel of the tile image to the right by amount proportional to the depth value associated with the pixel</p>
+				</section>
+				<section>
+					<h2>Happy coding!</h2>
+				</section>
+				<section>
+					<ul>
+						<li>
+							<a href="https://www.amazon.co.uk/Python-Playground-Projects-Curious-Programmer-ebook/dp/B017AH8H7I">
+								Python Playground: Geeky Projects for the Curious Programmer
+							</a>
+						</li>
+						<li><a href="https://github.com/electronut/pp">Code for the book</a></li>
+						<li><a href="http://www.colorstereo.com/texts_.txt/practice.htm">How to View Stereograms</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
